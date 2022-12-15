@@ -61,3 +61,26 @@ ejercicio08("06-ejemplo.txt", " :) lo logramos")
             console.error('Error: ', error);
         }
     )
+
+// ASYNC AWAIT
+// REGLAS:
+// 1) Estar dentro de una funcion
+// 2) AGREGAR la palabra 'async' antes de la declaración de la función
+// 3) AGREGAR la palabra 'await' antes de la declaración de la promesa
+async function asyncAwaitUno(path, nuevoContenido){
+    // Si sabemos que en la promesa PUEDE haber un reject, usamos try y catch
+    try{
+        const respuestaContenidoArchivoOriginal = await leerArchivo(path);
+        await escribirArchivo(path, respuestaContenidoArchivoOriginal + nuevoContenido);
+        // await escribirArchivo(path, (await leerArchivo(path)) + nuevoContenido);
+    }catch (error){
+        console.log(error);
+    }
+}
+asyncAwaitUno('06-ejempllo.tx', ':) lo logramos!')
+const asyncAwaitDos = async function (){
+
+}
+const asyncAwaitTres = async ()=>{
+
+}

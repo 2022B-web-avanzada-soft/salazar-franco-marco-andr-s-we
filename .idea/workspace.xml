@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf2e9d63-45ed-46b1-bd73-714eadae7f1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/01-javascript/07-promesas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-javascript/08-promesas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-javascript/proyecto-node/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-javascript/proyecto-node/09-inquirer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-javascript/08-promesas.js" beforeDir="false" afterPath="$PROJECT_DIR$/01-javascript/08-promesas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LabP31017\Documents\Repo\salazar-franco-marco-andres-web\01-javascript\proyecto-node" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,8 +57,8 @@
       <workItem from="1668719009950" duration="6514000" />
       <workItem from="1668805040438" duration="5410000" />
       <workItem from="1669064694327" duration="5651000" />
-      <workItem from="1669324105059" duration="3896000" />
-      <workItem from="1670538774553" duration="1718000" />
+      <workItem from="1669324105059" duration="3655000" />
+      <workItem from="1671133879627" duration="5708000" />
     </task>
     <servers />
   </component>
