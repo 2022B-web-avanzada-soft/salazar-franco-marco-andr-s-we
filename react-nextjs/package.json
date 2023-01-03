@@ -11,7 +11,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "next": "latest",
+    "next": "^13.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -23,5 +23,11 @@
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",
     "typescript": "^4.8.3"
-  }
+  },
+  "name": "react-nextjs",
+  "description": "This is a really simple project that shows the usage of Next.js with TypeScript.",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }
