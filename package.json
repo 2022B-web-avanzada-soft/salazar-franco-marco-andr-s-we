@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@emotion/react": "^11.10.5",
-    "@emotion/styled": "^11.10.5"
+    "@emotion/styled": "^11.10.5",
+    "inquirer": "^9.1.4"
   }
 }
