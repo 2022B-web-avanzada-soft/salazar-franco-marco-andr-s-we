@@ -26,7 +26,8 @@ const Layout = ({children, title = 'This is the default title'}: Props) => (
                 <Link href="/c_use_state">Use State</Link>                      |{' '}
                 <Link href="/d_hook_custom">Hook Custom</Link>                  |{' '}
                 <Link href="/e_use_context">Use Context</Link>                  |{' '}
-                <Link href="/f_ejemplo_criptomonedas">Criptomonedas</Link>      |{' '}
+                <Link href="/f_ejemplo_criptomoneda">Criptomonedas</Link>       |{' '}
+                <Link href="/h_react_hook_form">Formularios</Link>              |{' '}
                 <a href="/api/users">Users API</a>                              |{' '}
             </nav>
         </header>

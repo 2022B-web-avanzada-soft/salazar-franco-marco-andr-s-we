@@ -46,11 +46,16 @@ export default function (){
                         {
                             resultado.PRICE &&
                             <div>
-                                <p><strong>PRECIO:</strong> {resultado.PRICE}</p>
-                                <p><strong>Precio mas alto del dia:</strong> {resultado.HIGHDAY}</p>
-                                <p><strong>Precio mas bajo del dia:</strong> {resultado.LOWDAY}</p>
-                                <p><strong>Variacion ultimas 24 horas:</strong> {resultado.CHANGEPCT24HOUR}</p>
-                                <p><strong>Ultima Actualizacion:</strong> {resultado.LASTUPDATE}</p>
+                                <p><strong>PRECIO:</strong>
+                                    {resultado.PRICE}</p>
+                                <p><strong>Precio mas alto del dia:</strong>
+                                    {resultado.HIGHDAY}</p>
+                                <p><strong>Precio mas bajo del dia:</strong>
+                                    {resultado.LOWDAY}</p>
+                                <p><strong>Variacion ultimas 24 horas:</strong>
+                                    {resultado.CHANGEPCT24HOUR}</p>
+                                <p><strong>Ultima Actualizacion:</strong>
+                                    {resultado.LASTUPDATE}</p>
                             </div>
                         }
                     </div>
