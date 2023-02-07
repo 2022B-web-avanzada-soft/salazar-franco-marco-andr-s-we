@@ -2,6 +2,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@nestjs/platform-socket.io": "^9.3.3",
+    "@nestjs/websockets": "^9.3.3",
     "inquirer": "^9.1.4"
   }
 }
