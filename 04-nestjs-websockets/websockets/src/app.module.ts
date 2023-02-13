@@ -8,5 +8,5 @@ import {EventosModule} from "./eventos/eventos.module";
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModules {
+export class AppModule {
 }
