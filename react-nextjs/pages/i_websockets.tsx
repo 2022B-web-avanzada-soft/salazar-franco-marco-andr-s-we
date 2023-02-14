@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import MensajeChat, {MensajeChatProps} from "../components/i_websockets/MensajeChat";
 import {useForm} from "react-hook-form";
 import Layout from "../components/Layout";
+
 const servidorWebsocket = 'http://localhost:11202';
 const socket = io(servidorWebsocket);
 
@@ -12,6 +13,8 @@ export interface FormularioModelo{
     nombre: string;
     mensaje: string;
 }
+
+export type MensajeSala = FormularioModelo;
 
 export default function (){
     const [isConnected, setIsConnected] = useState(socket.connected)
@@ -28,7 +31,6 @@ export default function (){
 
     useEffect(
         ()=>{
-
             socket.on('connect', () => {
                 setIsConnected(true);
                 console.log('Si esta conectado');
@@ -46,7 +48,13 @@ export default function (){
                 };
                 setMensajes((mensajesAnteriores) => [...mensajesAnteriores, nuevoMensaje]);
             });
-            socket.on('escucharEventoUnirseSala', (data: { mensaje: string }) => {
+            socket.on('escucharEventoUnirseSala', (data: MensajeSala ) => {
+                const nuevoMensaje: MensajeChatProps = {
+                    mensaje: data.salaId + ' - ' + data.mensaje,
+                    nombre: data.nombre,
+                    posicion: 'I',
+                }
+                setMensajes((mensajesAnteriores) => [...mensajesAnteriores, nuevoMensaje]);
                 console.log('escucharEventoUnirseSala');
             });
             socket.on('escucharEventoMensajeSala', (data: { mensaje: string }) => {
@@ -74,7 +82,7 @@ export default function (){
     }
 
     const unirseSalaOEnviarMensajeASala = (data:FormularioModelo) => {
-        if(data.mensaje !== ''){
+        if(data.mensaje === ''){
             // unimos a la sala
             const dataEventosUnirseSala={
                 salaId: data.salaId,
