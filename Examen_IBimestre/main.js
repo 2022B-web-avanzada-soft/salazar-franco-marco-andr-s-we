@@ -19,7 +19,7 @@ let materias
 
 async function main(){
     try{
-        profesores = JSON.parse(await leerArchivo('profesores.txt'));
+        profesores = JSON.parse(await leerArchivo('profesor.txt'));
         materias = JSON.parse(await leerArchivo('materias.txt'));
 
         let opt = '';
@@ -146,7 +146,7 @@ async function main(){
                 case '0':
                     const profesoresGuardado = JSON.stringify(profesores)
                     const materiasGuardado = JSON.stringify(materias)
-                    await escribirArchivo('profesores.txt', profesoresGuardado)
+                    await escribirArchivo('profesor.txt', profesoresGuardado)
                     await escribirArchivo('materias.txt', materiasGuardado)
                     console.log('Gracias por preferirnos')
                     break
